@@ -1,0 +1,6 @@
+Roadster Kickflip — folder-ready build
+=====================================
+Open:  double-click index.html  (or any local static server)
+Zip:   parent folder also has /workspace/roadster-kickflip.tar.gz
+Pages: push this folder as repo root (or /docs) and enable GitHub Pages
+No npm install. No build command.

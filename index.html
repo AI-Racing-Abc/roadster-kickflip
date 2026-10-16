@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="description" content="Roadster Kickflip — fan web game. Time the jump. Do a kickflip. Not affiliated with Tesla or SpaceX." />
+  <title>Roadster Kickflip — Do a Kickflip</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>" />
+</head>
+<body>
+  <div id="app">
+    <header class="top">
+      <h1>Roadster Kickflip</h1>
+      <p class="tagline">Do a kickflip. Nail the timing.</p>
+    </header>
+
+    <div id="hud">
+      <div class="hud-item"><span class="label">Score</span><span id="score">0</span></div>
+      <div class="hud-item"><span class="label">Combo</span><span id="combo">×0</span></div>
+      <div class="hud-item"><span class="label">Best</span><span id="best">0</span></div>
+      <div class="hud-item"><span class="label">Flips</span><span id="flips">0</span></div>
+    </div>
+
+    <div id="stage-wrap">
+      <canvas id="game" width="960" height="540" aria-label="Roadster Kickflip game canvas"></canvas>
+      <div id="overlay" class="overlay">
+        <div class="panel" id="panel-start">
+          <h2>Do a Kickflip</h2>
+          <p>Drive up the ramp. Hit <kbd>Space</kbd> or <strong>tap</strong> in the green window when the car goes airborne.</p>
+          <ul class="tips">
+            <li><span class="good">Perfect</span> = big points + combo</li>
+            <li><span class="ok">Good</span> = solid flip</li>
+            <li><span class="bad">Early / Late</span> = wipeout</li>
+          </ul>
+          <button id="btn-start" type="button">Start</button>
+        </div>
+        <div class="panel hidden" id="panel-result">
+          <h2 id="result-title">Nice!</h2>
+          <p id="result-msg"></p>
+          <p class="result-score">Round score: <strong id="result-score">0</strong></p>
+          <button id="btn-again" type="button">Again</button>
+        </div>
+        <div class="panel hidden" id="panel-pause">
+          <h2>Paused</h2>
+          <button id="btn-resume" type="button">Resume</button>
+        </div>
+      </div>
+    </div>
+
+    <p id="hint" class="hint">Press <kbd>Space</kbd> / tap in the green zone · <kbd>P</kbd> pause · <kbd>R</kbd> restart</p>
+
+    <footer class="foot">
+      <p class="cta">
+        Built for the Roadster hype · Follow
+        <a href="https://x.com/jeffreylamOK" target="_blank" rel="noopener noreferrer">@jeffreylamOK</a>
+        · Chinese conversational lessons on
+        <a href="https://www.fiverr.com/s/ZooxY3l" target="_blank" rel="noopener noreferrer">Fiverr</a>
+      </p>
+      <p class="disclaimer">Fan game · Not affiliated with Tesla, SpaceX, or Elon Musk.</p>
+    </footer>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
