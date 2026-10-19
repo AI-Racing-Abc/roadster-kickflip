@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="ogTitle ogDesc">
+  <title id="ogTitle">Roadster Kickflip</title>
+  <desc id="ogDesc">Bold title art for Roadster Kickflip, a free fan-made browser game. Do a kickflip. Nail the timing.</desc>
+
+  <defs>
+    <radialGradient id="bgGlow" cx="78%" cy="42%" r="68%">
+      <stop offset="0%" stop-color="#2a1420"/>
+      <stop offset="55%" stop-color="#12161f"/>
+      <stop offset="100%" stop-color="#0a0c10"/>
+    </radialGradient>
+    <radialGradient id="redGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e82127" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#e82127" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff5b6a"/>
+      <stop offset="45%" stop-color="#e82127"/>
+      <stop offset="100%" stop-color="#ff9a5b"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e82127" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#e82127" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="carGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff4a50"/>
+      <stop offset="100%" stop-color="#b71319"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#222836" stroke-width="1"/>
+    </pattern>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGlow)"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.35"/>
+  <ellipse cx="960" cy="300" rx="420" ry="330" fill="url(#redGlow)"/>
+
+  <!-- speed streaks -->
+  <g stroke-linecap="round" stroke-width="7">
+    <line x1="32" y1="286" x2="150" y2="286" stroke="url(#lineGrad)" opacity="0.75"/>
+    <line x1="62" y1="326" x2="210" y2="326" stroke="url(#lineGrad)" opacity="0.55"/>
+    <line x1="32" y1="366" x2="132" y2="366" stroke="url(#lineGrad)" opacity="0.4"/>
+    <line x1="1050" y1="286" x2="1168" y2="286" stroke="url(#lineGrad)" opacity="0.75" transform="rotate(180 1109 286)"/>
+    <line x1="990" y1="326" x2="1138" y2="326" stroke="url(#lineGrad)" opacity="0.55" transform="rotate(180 1064 326)"/>
+    <line x1="1068" y1="366" x2="1168" y2="366" stroke="url(#lineGrad)" opacity="0.4" transform="rotate(180 1118 366)"/>
+  </g>
+
+  <!-- badge -->
+  <g transform="translate(80 66)">
+    <rect width="238" height="46" rx="23" fill="#12161f" stroke="#3a4258" stroke-width="1.5"/>
+    <circle cx="28" cy="23" r="7" fill="#2ee59d"/>
+    <text x="48" y="30" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" letter-spacing="3" fill="#9ecbff">FAN GAME</text>
+  </g>
+
+  <!-- title -->
+  <g filter="url(#softShadow)">
+    <text x="600" y="268" text-anchor="middle" font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif" font-size="108" font-weight="900" letter-spacing="3" fill="#f4f7ff">ROADSTER</text>
+    <text x="600" y="416" text-anchor="middle" font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif" font-size="150" font-weight="900" letter-spacing="2" fill="url(#titleGrad)">KICKFLIP</text>
+  </g>
+
+  <!-- subtitle -->
+  <text x="600" y="492" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" letter-spacing="1" fill="#c7cedd">Do a kickflip. Nail the timing.</text>
+  <text x="600" y="572" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" letter-spacing="2" fill="#6f7890">roadsterkickflip.com</text>
+
+  <!-- stylised car -->
+  <g transform="translate(978 512) rotate(-20)" filter="url(#softShadow)">
+    <path d="M18 4 Q26 -24 56 -24 H102 Q128 -24 140 4 Z" fill="#e8ecf4" opacity="0.9"/>
+    <rect x="0" y="0" width="158" height="50" rx="24" fill="url(#carGrad)"/>
+    <rect x="16" y="10" width="46" height="12" rx="6" fill="#0a0c10" opacity="0.35"/>
+    <circle cx="40" cy="50" r="16" fill="#0a0c10" stroke="#ff8a8a" stroke-width="5"/>
+    <circle cx="120" cy="50" r="16" fill="#0a0c10" stroke="#ff8a8a" stroke-width="5"/>
+  </g>
+
+  <!-- flip arc -->
+  <path d="M1020 452 A 120 120 0 0 1 1160 420" fill="none" stroke="#ffd166" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 17" opacity="0.85"/>
+
+  <rect x="0" y="624" width="1200" height="6" fill="url(#titleGrad)"/>
+</svg>
